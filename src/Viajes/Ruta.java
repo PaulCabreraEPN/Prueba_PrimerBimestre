@@ -37,7 +37,7 @@ public class Ruta extends Pasajero{
         this.fecha_salida = fecha_salida;
     }
 
-    public double calcula_costo(int ruta){
+    public double calcular_costo(int ruta){
 
         if (Ruta==1){
             return 20.00;
@@ -64,8 +64,6 @@ public class Ruta extends Pasajero{
         } else if (Ruta==4) {
             System.out.println("Ruta: Quito-Riobamba  ");
         }
-
-        System.out.println("Costo_pasaje: "+calcula_costo(Ruta));
         System.out.println("Fecha salida: " + fecha_salida);
     }
 }
