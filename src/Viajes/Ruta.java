@@ -37,11 +37,35 @@ public class Ruta extends Pasajero{
         this.fecha_salida = fecha_salida;
     }
 
+    public double calcula_costo(int ruta){
+
+        if (Ruta==1){
+            return 20.00;
+        } else if (Ruta==2) {
+            return 15.00;
+        } else if (Ruta==3) {
+            return 17.50;
+        } else if (Ruta==4) {
+            return 17.50;
+        }
+
+        return 0;
+    }
+
     @Override
     public void mostrar_info() {
         super.mostrar_info();
+        if (Ruta==1){
+            System.out.println("Ruta: Quito-Guayaquil ");
+        } else if (Ruta==2) {
+            System.out.println("Ruta: Quito-Puyo ");
+        } else if (Ruta==3) {
+            System.out.println("Ruta: Quito-Tulcán ");
+        } else if (Ruta==4) {
+            System.out.println("Ruta: Quito-Riobamba  ");
+        }
 
-        System.out.println("Ruta: " + Ruta);
+        System.out.println("Costo_pasaje: "+calcula_costo(Ruta));
         System.out.println("Fecha salida: " + fecha_salida);
     }
 }
