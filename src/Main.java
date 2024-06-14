@@ -21,5 +21,6 @@ public class Main {
 
         TICKETS_NOR Ticket1 = new TICKETS_NOR("Paul Cabrera",1751431964,1,hoy,true,"Ventana",15.5,true,"88888",hoy);
         Ticket1.mostrar_info();
+
     }
 }
